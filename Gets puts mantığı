@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+	
+	char yazi[20];
+	
+	printf("bir yazi girisi yapin :  ");
+	gets(yazi);
+	puts(yazi);
+	
+	return 0;
+}
