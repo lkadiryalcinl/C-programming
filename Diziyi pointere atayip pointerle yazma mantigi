@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	
+	int sayilar[5]={1,2,3,4,5};
+	
+	int *p =sayilar;
+	
+	int i;
+	
+	for(i=0;i<5;i++){
+		
+		printf("%d\n",p[i]);
+	}
+	return 0;
+}
