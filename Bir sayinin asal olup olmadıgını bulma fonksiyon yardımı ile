@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int asal_mi(int sayi){
+	
+	int i;
+	
+	for(i=2;i<sayi;i++){
+		
+		if(sayi%i==0){
+			
+			return 0;
+		}
+	}
+	
+	return 1;
+}
+
+int main(){
+	
+	int sayi;
+	
+	printf("bir sayi girin: ");
+	scanf("%d",&sayi);
+	 
+    if(sayi<2){
+    	
+    	printf("!!!hatali deger girdiinz!!!");
+	
+	return 0;
+	}
+
+
+
+	else if(asal_mi(sayi)==0){
+		
+		printf("!!!sayi asal degil!!!");
+	
+	return 0;
+	}
+	
+	else (asal_mi(sayi)==1);{
+		
+		printf("!!!sayi asaldir!!!");
+	
+	return 0;
+	}
+
+    
+}
