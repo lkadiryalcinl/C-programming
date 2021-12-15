@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct kitap_kayit
+{
+	char kitapad[30];
+	char yazar[20];
+	int ucret;
+	float puan;
+};
+
+    struct kitap_kayit kk;
+
+
+int main() {	
+	
+	printf("Kitapadi girin: ");
+	scanf("%s",&kk.kitapad);
+	printf("Kitap yazari girin: ");
+	scanf("%s",&kk.yazar);
+	printf("Kitap ucreti girin: ");
+	scanf("%d",&kk.ucret);
+	printf("Kitap puani girin(1-10 arasinda): ");
+	scanf("%f",&kk.puan);
+	
+	printf("\n\n");
+	
+	printf("Kitap Ad: %s\n",kk.kitapad);
+	printf("Kitap Yazar: %s\n",kk.yazar);
+	printf("Kitap Ucret: %d\n",kk.ucret);
+	printf("Kitap Puan: %.2f",kk.puan);
+	
+	return 0;
+}
