@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+	
+	int s1,s11,s2,aratop;
+	
+	aratop=0;
+	
+	printf("sayi 1 girin: ");
+	scanf("%d",&s1);
+	
+	printf("sayi 1'i bir daha girin: ");
+	scanf("%d",&s11);
+	
+	
+    if(s1==s11){
+    
+    printf("sayi 2 girin: ");
+	scanf("%d",&s2);
+		
+    		for(s1;s1<s2;s1++){
+		
+	    aratop=aratop+s1;
+		 
+	}
+	
+	printf("%d",aratop-s11);
+    }
+	else if(s1<s11||s1>s11){
+	
+	printf("!!!HATA!!!");
+	
+	
+	}
+	return 0;
+
+  
+  \\ PLEASE SUBSCRİBE (LÜTFEN ABONE OLUN)
+}
