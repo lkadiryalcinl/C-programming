@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	int s,t1,t2,m,sayi,c;
+	s=0,t1=0,t2=0,m=2,c=1;
+
+    printf("lutfen sayiyi girin: ");
+    scanf("%d",&sayi);
+    
+    if (sayi>0){
+	
+    
+    while (sayi>s){
+    	
+    s++;
+	t1=t1+s;
+    
+	}
+    
+    printf("1 den girdiginiz sayiya kadar olan sayilarin toplami: %d",t1);
+
+    }
+    else if (sayi=0){
+    	
+    printf("1 den girdiginiz sayiya kadar olan sayilarin toplami: %d",c);
+	
+	}
+	else {
+  
+     while(sayi<s){
+     	
+    s--;
+	t2=t2+s;
+    } 
+	printf("1 den girdiginiz sayiya kadar olan sayilarin toplami: %d",t2); 
+	}
+	}
+  \\ PLEASE SUBSCRBİE (LÜTFEN ABONE OLUN)
