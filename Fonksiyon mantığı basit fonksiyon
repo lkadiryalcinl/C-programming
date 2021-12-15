@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+  int  toplama(int sayi1,int sayi2)
+  {
+  	int toplam;
+  	toplam=sayi1+sayi2;
+  	printf("girdiginiz iki sayinin toplami = %d",toplam);
+  	return toplam;
+  }
+
+int main() {
+	
+	toplama(15,25);
+	
+	return 0;
+}
