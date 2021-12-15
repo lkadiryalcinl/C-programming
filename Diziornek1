@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+int main() {
+    printf("---------------------------------------------------------------------------------------------------------------------\n");
+    float dizi[10],enbuyuk,enkucuk,toplam=0.0,toplam2=0.0,standartsapma,aciklik;
+    
+    int i,j;
+	
+	for(j=0;j<3;j++){
+	
+	printf("sayi girin: ");
+	scanf("%f",&dizi[j]);
+    
+	}
+	
+    for(i=0;i<7;i++){
+       dizi[i+3]=(dizi[i]+dizi[i+1]+dizi[i+2])/3;
+      	
+	}   
+    for(i=0;i<10;i++)
+    {
+    printf("%d.terim = %f\n",i+1,dizi[i]);
+	}
+    
+	enbuyuk=dizi[0];
+	enkucuk=dizi[0];
+	
+	for(i=0;i<2;i++)
+	{
+		if(dizi[i+1]>enbuyuk)
+		{
+			enbuyuk=dizi[i+1];
+		}
+	}
+	for(i=0;i<2;i++)
+	{
+	if(dizi[i+1]<enkucuk)
+	    {
+	    	enkucuk=dizi[i+1];
+		}
+    }
+	
+	printf("---------------------------------------------------------------------------------------------------------------------");
+	printf("En buyuk terim = %.2f\n",enbuyuk);
+	printf("En Kucuk terim = %.2f\n\n",enkucuk);
+	
+	aciklik=enbuyuk-enkucuk;
+	printf("Dizinin acikligi = %.2f\n",aciklik);
+	for(i=0;i<10;i++)
+	{
+		toplam+=dizi[i];
+	}
+	printf("Dizini aritmetik ortalamasi = %f\n",toplam/10);
+	
+	for(i=0;i<10;i++)
+	{
+		toplam2+=dizi[i]-(toplam/10);
+	    
+	}
+	standartsapma=sqrt(toplam2/10);
+	printf("Dizinin standart sapmasi = %f\n",standartsapma);
+		
+	printf("---------------------------------------------------------------------------------------------------------------------");
+    
+	
+	return 0;
+}
+
+\\ Please Subscribe!!! (LÜTFEN ABONE OLUN!!!) 
