@@ -6,6 +6,8 @@ int main() {
 	
 	int sayac=0,i,a,b,c,sayi;
 	tekrar:
+	printf("---------------------------------------------------------\n\n");
+	printf("!!!0 degeri girerseniz programdan cikar!!!\n\n");
 	printf("100 den buyuk bir sayi girin : ");
 	scanf("%d",&sayi);
 	
@@ -20,20 +22,23 @@ int main() {
 			sayac++;
 		}
 	}
-	printf("Girilen sayiya kadar olan rakamlari farkli %d sayi var.\n\n",sayac);
-    goto tekrar;
+	printf("Girilen sayiya kadar olan rakamlari farkli %d sayi var.\n",sayac);
+        printf("---------------------------------------------------------\n\n");
+	goto tekrar;
 	}
 	
 	else if(sayi==0)
 	{
 	printf("\n...programdan cikiliyor...\n");
+	printf("---------------------------------------------------------\n\n");
 	return 0;
     }
 	
 	else(sayi<=100);
 	{
-		printf("!!!HATALI DEGER GIRDINIZ!!!\n\n");
-	    goto tekrar;
+		printf("!!!HATALI DEGER GIRDINIZ!!!\n");
+	    printf("---------------------------------------------------------\n\n");
+		goto tekrar;
 	}
 	
 }
