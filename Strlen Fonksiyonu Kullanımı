@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	char kelime[100];
+	printf("kelime girin: ");
+	gets(kelime);
+	printf("katar uzunlugu : %d",strlen(kelime));
+	
+	
+	return 0;
+}
