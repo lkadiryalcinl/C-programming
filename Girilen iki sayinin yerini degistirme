@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void degerdegistir(int *a,int *b){
+	
+	int gecici=*a;
+	
+    *a=*b;
+	
+	*b=gecici;
+}
+
+
+
+int main() {
+	int x,y;
+	
+	printf("1. sayiyi girin : ");
+	scanf("%d",&x);
+	printf("2. sayiyi girin : ");
+	scanf("%d",&y);
+	
+	degerdegistir(&x,&y);
+	
+	printf("1. sayi = %d , 2. sayi = %d ",x,y);
+	
+	return 0;
+}
