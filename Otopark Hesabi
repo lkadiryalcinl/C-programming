@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	int saat;
+	
+	printf("saat miktari girin: ");
+	scanf("%d",&saat);
+	
+	if (saat>0 && saat<5){
+		printf("odenecek miktar = 10 TL");
+	}
+	else if (saat>4 && saat<9){
+		printf("odenecek miktar = 12 TL");
+	}
+	else if (saat>8 && saat<13){
+		printf("odenecek miktar = 15 TL");
+	}
+	else if (saat>12){
+		printf("odenecek miktar = 20 TL");
+	}
+	else printf("yanlis veya eksik saat girdiniz...");
+	return 0;
+}
