@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	
+	char karakter;
+	
+	printf("Klavyeden bir karakter girin ve enter'a basin: ");
+	
+	karakter=getchar();
+	
+	printf("girdiginiz karakter: ");
+	putchar(karakter);
+	
+	return 0;
+}
