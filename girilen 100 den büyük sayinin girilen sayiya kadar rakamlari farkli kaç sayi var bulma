@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int sayac=0,i,a,b,c,sayi;
+	tekrar:
+	printf("100 den buyuk bir sayi girin : ");
+	scanf("%d",&sayi);
+	
+	if(sayi>100)
+	{
+	for (i=100;i<=sayi;i++){
+		
+		a=i/100;
+		b=(i/10)%10;
+		c=i%10;
+		if(a!=b && a!=c && b!=c){
+			sayac++;
+		}
+	}
+	printf("Girilen sayiya kadar olan rakamlari farkli %d sayi var.\n\n",sayac);
+    goto tekrar;
+	}
+	
+	else if(sayi==0)
+	{
+	printf("\n...programdan cikiliyor...\n");
+	return 0;
+    }
+	
+	else(sayi<=100);
+	{
+		printf("!!!HATALI DEGER GIRDINIZ!!!\n\n");
+	    goto tekrar;
+	}
+	
+}
