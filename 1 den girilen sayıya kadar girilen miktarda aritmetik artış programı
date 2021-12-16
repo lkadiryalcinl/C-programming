@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+    setlocale(LC_ALL, "Turkish");
+    
+    int sayi,artis,kontrol;
+    
+    tekrar:
+    printf("1 den kaça kadar artsın : ");
+    scanf("%d",&sayi);
+    printf("kaçar kaçar artsın : ");
+    scanf("%d",&artis);
+    
+    if(sayi<=artis) 
+	{
+	printf("!!!HATA ARTIŞ MİKTARI GİRİLEN SAYIDAN BÜYÜK OLAMAZ!!!\n\n"); 
+	goto tekrar;
+	}
+	else
+	{
+	for (int i=1; i<=sayi; i+=artis)
+    {
+
+        printf("%d\n",i);
+    }
+    }
+    printf("Devam etmek için 1'e çıkmak için herhangi bir tuşa basın : ");
+    scanf("%d",&kontrol);
+	
+	if(kontrol==1) goto tekrar;
+    else printf("...Programdan Çıkılıyor..."); return 0;
+}
