@@ -1,0 +1,42 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+   
+  int main() 
+  { 
+   
+   int i,j,bosluk=9,yildiz=1;
+   
+   for(i=0;i<10;i++)
+   {
+	for(j=0;j<bosluk;j++)
+    	printf(" ");
+		printf("/");   
+   for(j=0;j<yildiz;j++)
+        printf("*");
+   printf("\\");
+   printf("\n");
+   bosluk--;
+   yildiz+=2;
+   }
+   
+   int bosluk1=1,yildiz1=19;
+   for(i=0;i<10;i++)
+   {
+	for(j=1;j<bosluk1;j++)
+	{
+    	printf(" "); 
+    }
+   printf("\\");
+   for(j=0;j<yildiz1;j++)
+    {
+	printf("*");
+	}    
+   bosluk1++;
+   yildiz1-=2;
+   
+   printf("/");
+   printf("\n");
+   
+   }
+   return 0;
+}
