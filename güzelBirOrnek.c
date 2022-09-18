@@ -49,13 +49,7 @@ int main(){
 					person[i].charGender = "female";
 				
 			}
-		
-	}
-	
-	for(int i=0;i<10;i++){
 		printf("name : %s	age : %d	gender : %s\n",person[i].name,person[i].age,person[i].charGender);
 	}
 		
-	
-	
 }
